@@ -8,7 +8,7 @@ galleryItems.forEach((image) => {
     const listItem = document.createElement("li");
     listItem.insertAdjacentHTML(
       "beforeend",
-      `<a class="gallery__link" href="large-image.jpg">
+      `<a class="gallery__link" href="${image.original}">
       <img class = "gallery__image" src="${image.preview}" data-source="large-image.jpg" alt="${image.description}" width = "100%" height = "100%"/>
       </a>`
     );
